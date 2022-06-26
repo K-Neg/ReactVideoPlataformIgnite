@@ -1,7 +1,7 @@
 
 import  {useState, FormEvent} from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Logo } from '../components/logo';
+import { Logo } from '../components/Logo';
 import { useCreateSubscriberMutation } from '../graphql/generate';
 
 export function Subscribe(){
@@ -57,8 +57,8 @@ export function Subscribe(){
             <button 
               type="submit"
               disabled={loading}
-              className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled: opacity-50">
-                            SUBMETER
+              className={`mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors ${loading ? 'opacity-50' : ''}`}>
+                SUBMETER
             </button>
           </form>
         </div>

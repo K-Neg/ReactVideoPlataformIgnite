@@ -5,10 +5,11 @@
   "scripts": {
     "lint": "eslint src/**/*.tsx --fix",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "codegen": "graphql-codegen",
+    "build": "npm run codegen && tsc && vite build",
     "preview": "vite preview",
-    "extra-lint": "eslint . --ext .ts",
-    "codegen": "graphql-codegen"
+    "extra-lint": "eslint . --ext .ts"
+    
   },
   "dependencies": {
     "@apollo/client": "^3.6.8",
