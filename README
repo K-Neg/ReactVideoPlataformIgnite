@@ -1,0 +1,10 @@
+# React Video Plataform
+##
+Online video plataform with headless CMD, based on Rockseat tutorial.
+
+## Install
+npm i -f
+npm run codegen
+
+## Run
+npm run dev
