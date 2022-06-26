@@ -9,7 +9,6 @@
     "build": "npm run codegen && tsc && vite build",
     "preview": "vite preview",
     "extra-lint": "eslint . --ext .ts"
-    
   },
   "dependencies": {
     "@apollo/client": "^3.6.8",
